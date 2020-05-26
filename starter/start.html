@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="../assets/styles.css">
+    <head><title>Css Grid</title></head>
+    <body>
+        <p>Hello Css Grid</p>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+        </div>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: 100px auto 300px 150px;
+                grid-gap: 10px;
+            }
+            .item{
+                display: grid;
+                align-items: center;
+                background-color: yellow;
+                justify-content: center ;
+            }
+        </style>
+    </body>
+</html>
